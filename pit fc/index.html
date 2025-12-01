@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pit Stop FC - Garagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">Pit Stop FC 🏁</div>
+    <nav>
+      <a href="index.html" class="active">Garagem</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Máquinas Exclusivas no Brasil</h1>
+      <p>Explore nossa coleção de hipercarros raros. Clique para ver detalhes.</p>
+    </section>
+
+    <div class="filtros" id="filtros"></div>
+
+    <div class="grid-carros" id="galeria-carros"></div>
+
+    <div id="modal-detalhes" class="modal-overlay" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="fechar-modal" onclick="fecharModal()">×</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pit Stop FC - Projeto Acadêmico LSW</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

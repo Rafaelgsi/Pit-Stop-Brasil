@@ -1,0 +1,143 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; }
+
+body { background-color: #121212; color: #e0e0e0; }
+
+/* === CABEÇALHO COM FOTO DE FUNDO === */
+header {
+    /* Foto de fundo (Textura de carro escuro) com uma "película" preta por cima para o texto aparecer */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2000');
+    
+    background-size: cover;       /* A imagem cobre todo o espaço */
+    background-position: center;  /* Centraliza a imagem */
+    
+    padding: 1.5rem 3rem;         /* Espaçamento interno */
+    display: flex;                /* Alinha Logo e Menu lado a lado */
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 4px solid #d32f2f; /* Borda vermelha grossa na base */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+}
+
+/* Logo Simples e Grande */
+.logo {
+    font-size: 2rem;
+    font-weight: 900; /* Letra bem grossa */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic; /* Itálico para dar velocidade */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Menu Limpo (Sem fundos, apenas texto) */
+nav {
+    display: flex;
+    gap: 30px; /* Espaço entre os links */
+}
+
+nav a {
+    color: #cccccc; /* Cinza claro */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease; /* Transição suave de cor */
+    position: relative;
+}
+
+/* Efeito Criativo Simples: Risquinho embaixo quando passa o mouse */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d32f2f;
+    transition: width 0.3s;
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%; /* O risco cresce */
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff; /* Fica branco brilhante */
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Um embaixo do outro no celular */
+        padding: 1rem;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* --- A CORREÇÃO DO CONTRASTE AQUI --- */
+nav a:hover, nav a.active { 
+    color: #ffffff; /* Branco puro para leitura perfeita */
+    border-bottom: 2px solid #d32f2f; /* Sublinhado vermelho sutil */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center; padding: 4rem 2rem; margin: 2rem auto; max-width: 1200px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pagani_Huayra_BC_at_GIMS_2018_II.jpg/1280px-Pagani_Huayra_BC_at_GIMS_2018_II.jpg');
+    background-size: cover; background-position: center; border-radius: 15px; border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.hero h1 { font-size: 3rem; color: #fff; margin-bottom: 15px; text-shadow: 2px 2px 4px #000; }
+.hero p { font-size: 1.2rem; color: #ccc; }
+
+/* Filtros */
+.filtros { display: flex; justify-content: center; gap: 15px; margin-bottom: 3rem; flex-wrap: wrap; padding: 0 20px; }
+.btn-filtro {
+    background: #2a2a2a; border: 2px solid #444; color: #ccc; padding: 10px 25px;
+    border-radius: 30px; cursor: pointer; font-weight: bold; transition: 0.3s; font-size: 0.9rem;
+}
+.btn-filtro:hover, .btn-filtro.ativo { background: #d32f2f; border-color: #d32f2f; color: white; box-shadow: 0 0 15px rgba(211, 47, 47, 0.5); }
+
+/* Grid de Carros */
+.grid-carros {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem;
+    max-width: 1200px; margin: 0 auto; padding: 0 20px 50px;
+}
+.card {
+    background: #252525; border-radius: 12px; overflow: hidden; cursor: pointer; transition: 0.4s ease;
+    border: 1px solid #333;
+}
+.card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 15px 30px rgba(0,0,0,0.4); border-color: #d32f2f; }
+.card img { width: 100%; height: 220px; object-fit: cover; border-bottom: 3px solid #d32f2f; }
+.card-info { padding: 1.5rem; }
+.card-info h3 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
+.ver-mais { color: #d32f2f; font-weight: bold; margin-top: 15px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+
+/* Modal */
+.modal-overlay {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95); z-index: 1000; justify-content: center; align-items: center;
+    backdrop-filter: blur(5px);
+}
+.modal-content {
+    background: #1e1e1e; width: 95%; max-width: 850px; padding: 2.5rem; border-radius: 15px;
+    border: 2px solid #d32f2f; position: relative; max-height: 90vh; overflow-y: auto;
+    box-shadow: 0 0 50px rgba(211, 47, 47, 0.3);
+}
+.fechar-modal { position: absolute; top: 15px; right: 20px; background: none; border: none; color: white; font-size: 2.5rem; cursor: pointer; transition: 0.3s; }
+.fechar-modal:hover { color: #d32f2f; transform: rotate(90deg); }
+.img-principal { width: 100%; border-radius: 10px; margin-bottom: 1.5rem; border: 2px solid #333; }
+.badge-raridade { background: #d32f2f; color: white; padding: 8px 15px; border-radius: 20px; font-weight: bold; letter-spacing: 0.5px; box-shadow: 0 2px 10px rgba(211,47,47,0.3); }
+.modal-content h2 { font-size: 2rem; margin-bottom: 20px; color: #fff; }
+.modal-content p { font-size: 1.1rem; line-height: 1.6; color: #ccc; margin-bottom: 10px; }
+.modal-content strong { color: #fff; }
+
+/* Rodapé */
+footer { text-align: center; padding: 3rem; background: #1a1a1a; margin-top: 4rem; color: #666; border-top: 1px solid #333; }
