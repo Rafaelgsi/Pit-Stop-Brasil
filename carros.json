@@ -13,9 +13,9 @@
     "modelo": "McLaren Senna",
     "marca": "McLaren",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/McLaren_Senna_Geneva_2018_002.jpg/800px-McLaren_Senna_Geneva_2018_002.jpg",
+    "imagem_capa": "https://cdn.motor1.com/images/mgl/YA3Jmq/s3/mclaren-senna-sempre.webp",
     "unidades_brasil": "Aproximadamente 6 unidades",
-    "descricao": "Um tributo ao lendário piloto brasileiro Ayrton Senna."
+    "descricao": "Um tributo ao lendário piloto brasileiro Ayrton Senna. Essa pintura 'Sempre' é uma edição especial histórica."
   },
   {
     "id": 3,
@@ -269,4 +269,5 @@
     "unidades_brasil": "1 unidade confirmada",
     "descricao": "O Zonda é um dos modelos mais exclusivos e desejados do mundo."
   }
+
 ]
