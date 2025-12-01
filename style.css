@@ -1,7 +1,21 @@
 /* Reset básico */
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; }
 
-body { background-color: #121212; color: #e0e0e0; }
+body {
+    /* Cor do texto */
+    color: #e0e0e0;
+
+    /* IMAGEM DE FUNDO GERAL */
+    /* Usamos um 'linear-gradient' preto quase transparente por cima da imagem para garantir que o site continue legível */
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre-v2.png'); /* Textura de fibra de carbono */
+
+    /* Faz a imagem cobrir tudo e ficar parada ao rolar */
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Garantindo a fonte aqui */
+}
 
 /* === CABEÇALHO COM FOTO DE FUNDO === */
 header {
@@ -140,4 +154,5 @@ nav a:hover, nav a.active {
 .modal-content strong { color: #fff; }
 
 /* Rodapé */
+
 footer { text-align: center; padding: 3rem; background: #1a1a1a; margin-top: 4rem; color: #666; border-top: 1px solid #333; }
