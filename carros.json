@@ -4,7 +4,7 @@
     "modelo": "Bugatti Chiron",
     "marca": "Bugatti",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Bugatti_Chiron_%2836559710091%29.jpg/800px-Bugatti_Chiron_%2836559710091%29.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/6/62/Bugatti_Chiron_%2836559710091%29.jpg",
     "unidades_brasil": "1 unidade conhecida (São Paulo)",
     "descricao": "O Bugatti Chiron é uma obra-prima da engenharia com 1.500 cavalos."
   },
@@ -13,16 +13,16 @@
     "modelo": "McLaren Senna",
     "marca": "McLaren",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://cdn.motor1.com/images/mgl/YA3Jmq/s3/mclaren-senna-sempre.webp",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/7/7a/McLaren_Senna_1.jpg",
     "unidades_brasil": "Aproximadamente 6 unidades",
-    "descricao": "Um tributo ao lendário piloto brasileiro Ayrton Senna. Essa pintura 'Sempre' é uma edição especial histórica."
+    "descricao": "Um tributo ao lendário piloto brasileiro Ayrton Senna."
   },
   {
     "id": 3,
     "modelo": "Ferrari LaFerrari",
     "marca": "Ferrari",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/LaFerrari_in_Beverly_Hills_%287191914175%29.jpg/800px-LaFerrari_in_Beverly_Hills_%287191914175%29.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/9/95/Ferrari_LaFerrari_2013.jpg",
     "unidades_brasil": "1 unidade confirmada",
     "descricao": "O ápice da tecnologia da Ferrari, o primeiro híbrido da marca."
   },
@@ -31,7 +31,7 @@
     "modelo": "Porsche 918 Spyder",
     "marca": "Porsche",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Porsche_918_Spyder_IAA_2013.jpg/800px-Porsche_918_Spyder_IAA_2013.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Porsche_918_Spyder.jpg",
     "unidades_brasil": "Cerca de 3 unidades",
     "descricao": "Parte da 'Santíssima Trindade' dos hipercarros."
   },
@@ -40,16 +40,16 @@
     "modelo": "Lamborghini Aventador",
     "marca": "Lamborghini",
     "categoria": "Superesportivo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Lamborghini_Aventador_LP700-4_%287362772522%29.jpg/800px-Lamborghini_Aventador_LP700-4_%287362772522%29.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/3/35/Lamborghini_Aventador_2012.jpg",
     "unidades_brasil": "Cerca de 8 unidades",
-    "descricao": "A versão mais extrema do Aventador com motor V12."
+    "descricao": "A versão mais extrema do Aventador."
   },
   {
     "id": 6,
     "modelo": "Volkswagen SP2",
     "marca": "Volkswagen",
     "categoria": "Clássico Nacional",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Volkswagen_SP2.jpg/800px-Volkswagen_SP2.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Volkswagen_SP2.jpg",
     "unidades_brasil": "Cerca de 10.000 produzidas",
     "descricao": "O Volkswagen mais bonito do mundo, desenhado no Brasil."
   },
@@ -58,7 +58,7 @@
     "modelo": "Puma GTB S2",
     "marca": "Puma",
     "categoria": "Clássico Nacional",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Puma_GTB_S2.jpg/800px-Puma_GTB_S2.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Puma_GTB_S2.jpg",
     "unidades_brasil": "Raríssimo",
     "descricao": "O 'Muscle Car' brasileiro com motor do Opala."
   },
@@ -66,8 +66,8 @@
     "id": 8,
     "modelo": "Ferrari F40",
     "marca": "Ferrari",
-    "categoria": "Lenda Importada",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/F40_Ferrari_20090509.jpg/800px-F40_Ferrari_20090509.jpg",
+    "categoria": "Hipercarro",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ferrari_F40_1992.jpg",
     "unidades_brasil": "Raríssimo",
     "descricao": "O icônico superesportivo da Ferrari dos anos 80."
   },
@@ -75,8 +75,8 @@
     "id": 9,
     "modelo": "Ferrari F50",
     "marca": "Ferrari",
-    "categoria": "Lenda Importada",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ferrari_F50_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2810%29.jpg/800px-Ferrari_F50_-_Flickr_-_Alexandre_Pr%C3%A9vot_%2810%29.jpg",
+    "categoria": "Hipercarro",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ferrari_F50_1995.jpg",
     "unidades_brasil": "Raríssimo",
     "descricao": "O Ferrari F50 é uma mistura de supercarro e Fórmula 1."
   },
@@ -84,8 +84,8 @@
     "id": 10,
     "modelo": "Jaguar XJ220",
     "marca": "Jaguar",
-    "categoria": "Lenda Importada",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Jaguar_XJ220_at_Retromobile_2012.jpg/800px-Jaguar_XJ220_at_Retromobile_2012.jpg",
+    "categoria": "Hipercarro",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jaguar_XJ220.jpg",
     "unidades_brasil": "Raríssimo",
     "descricao": "Uma das máquinas mais rápidas dos anos 90."
   },
@@ -93,26 +93,26 @@
     "id": 11,
     "modelo": "Porsche Carrera GT",
     "marca": "Porsche",
-    "categoria": "Lenda Importada",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Porsche_Carrera_GT_-_Goodwood_Breakfast_Club_%28July_2008%29.jpg/800px-Porsche_Carrera_GT_-_Goodwood_Breakfast_Club_%28July_2008%29.jpg",
+    "categoria": "Hipercarro",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Porsche_Carrera_GT.jpg",
     "unidades_brasil": "Cerca de 2 unidades",
-    "descricao": "Uma verdadeira obra-prima da engenharia com motor V10."
+    "descricao": "Uma verdadeira obra-prima da engenharia e design automotivo."
   },
   {
     "id": 12,
     "modelo": "Pagani Huayra R",
     "marca": "Pagani",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Pagani_Huayra_Geneva_Motor_Show_2011.JPG/800px-Pagani_Huayra_Geneva_Motor_Show_2011.JPG",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pagani_Huayra_R.jpg",
     "unidades_brasil": "1 unidade conhecida",
-    "descricao": "O Huayra é um dos modelos mais exclusivos da Pagani."
+    "descricao": "O Huayra R é um dos modelos mais exclusivos da Pagani."
   },
   {
     "id": 13,
     "modelo": "Mercedes SLR McLaren",
     "marca": "Mercedes-Benz",
     "categoria": "Superesportivo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mercedes-Benz_SLR_McLaren_Roadster_%28R_199%29_-_Frontansicht%2C_2._April_2011%2C_D%C3%BCsseldorf.jpg/800px-Mercedes-Benz_SLR_McLaren_Roadster_%28R_199%29_-_Frontansicht%2C_2._April_2011%2C_D%C3%BCsseldorf.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mercedes-Benz_SLR_McLaren_2003.jpg",
     "unidades_brasil": "Cerca de 5 unidades",
     "descricao": "Um supercarro com design inspirado na Fórmula 1."
   },
@@ -121,7 +121,7 @@
     "modelo": "Porsche 911 GT3 RS",
     "marca": "Porsche",
     "categoria": "Superesportivo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Porsche_911_GT3_RS.jpg/800px-Porsche_911_GT3_RS.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Porsche_911_GT3_RS.jpg",
     "unidades_brasil": "Cerca de 10 unidades",
     "descricao": "O Porsche 911 GT3 RS é um dos modelos mais icônicos da marca."
   },
@@ -130,7 +130,7 @@
     "modelo": "Rolls-Royce Cullinan",
     "marca": "Rolls-Royce",
     "categoria": "Luxo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rolls-Royce_Cullinan_2019.jpg/800px-Rolls-Royce_Cullinan_2019.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Rolls-Royce_Cullinan_2018.jpg",
     "unidades_brasil": "Poucas unidades",
     "descricao": "O SUV mais luxuoso do mundo, digno de um verdadeiro rei."
   },
@@ -139,7 +139,7 @@
     "modelo": "Bentley Continental GT",
     "marca": "Bentley",
     "categoria": "Luxo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bentley_Continental_GT.jpg/800px-Bentley_Continental_GT.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bentley_Continental_GT_2019.jpg",
     "unidades_brasil": "Poucas unidades",
     "descricao": "A combinação perfeita de luxo e desempenho."
   },
@@ -148,7 +148,7 @@
     "modelo": "Audi R8 Manual",
     "marca": "Audi",
     "categoria": "Superesportivo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Audi_R8_Coup%C3%A9_5.2_FSI_quattro_S_tronic_%28II%29_%E2%80%93_Frontansicht%2C_22._M%C3%A4rz_2015%2C_D%C3%BCsseldorf.jpg/800px-Audi_R8_Coup%C3%A9_5.2_FSI_quattro_S_tronic_%28II%29_%E2%80%93_Frontansicht%2C_22._M%C3%A4rz_2015%2C_D%C3%BCsseldorf.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Audi_R8_V10_Manual_2019.jpg",
     "unidades_brasil": "15 unidades lançadas",
     "descricao": "O R8 Manual é um supercarro único no Brasil."
   },
@@ -157,7 +157,7 @@
     "modelo": "Ford GT",
     "marca": "Ford",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ford_GT_2019.jpg/800px-Ford_GT_2019.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/1/14/2017_Ford_GT.jpg",
     "unidades_brasil": "1 unidade conhecida",
     "descricao": "Um tributo ao famoso Ford GT40, com design futurista."
   },
@@ -166,7 +166,7 @@
     "modelo": "Lamborghini Huracan",
     "marca": "Lamborghini",
     "categoria": "Superesportivo",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lamborghini_Huracan.jpg/800px-Lamborghini_Huracan.jpg",
+    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Lamborghini_Huracan_2016.jpg",
     "unidades_brasil": "Várias unidades",
     "descricao": "O Huracán é um dos supercarros mais emblemáticos da Lamborghini."
   },
@@ -175,10 +175,8 @@
     "modelo": "Ferrari SF90 Stradale",
     "marca": "Ferrari",
     "categoria": "Hipercarro",
-    "imagem_capa": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ferrari_SF90_Stradale.jpg/800px-Ferrari_SF90_Stradale.jpg",
-    "unidades_brasil": "Várias unidades",
-    "descricao": "O SF90 Stradale é o primeiro híbrido plug-in da Ferrari."
-  },
+    "imagem_capa": "https://upload.wik_
+
   {
     "id": 21,
     "modelo": "Jaguar F-Type SVR",
@@ -271,3 +269,4 @@
   }
 
 ]
+
