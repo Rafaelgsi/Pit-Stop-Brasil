@@ -100,16 +100,37 @@ nav a:hover, nav a.active {
     color: #ffffff; /* Branco puro para leitura perfeita */
     border-bottom: 2px solid #d32f2f; /* Sublinhado vermelho sutil */
 }
-
-/* Hero Section */
+/* Hero Section (A caixa que você circulou) */
 .hero {
-    text-align: center; padding: 4rem 2rem; margin: 2rem auto; max-width: 1200px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pagani_Huayra_BC_at_GIMS_2018_II.jpg/1280px-Pagani_Huayra_BC_at_GIMS_2018_II.jpg');
-    background-size: cover; background-position: center; border-radius: 15px; border: 1px solid #333;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    
+    /* IMAGEM DE FUNDO DA CAIXA */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pagani_Huayra_BC_at_GIMS_2018_II.jpg/1280px-Pagani_Huayra_BC_at_GIMS_2018_II.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 2px solid #d32f2f; /* Borda vermelha para combinar */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
-.hero h1 { font-size: 3rem; color: #fff; margin-bottom: 15px; text-shadow: 2px 2px 4px #000; }
-.hero p { font-size: 1.2rem; color: #ccc; }
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #000;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
 
 /* Filtros */
 .filtros { display: flex; justify-content: center; gap: 15px; margin-bottom: 3rem; flex-wrap: wrap; padding: 0 20px; }
@@ -156,3 +177,4 @@ nav a:hover, nav a.active {
 /* Rodapé */
 
 footer { text-align: center; padding: 3rem; background: #1a1a1a; margin-top: 4rem; color: #666; border-top: 1px solid #333; }
+
