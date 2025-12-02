@@ -4,7 +4,7 @@
     "modelo": "Bugatti Chiron",
     "marca": "Bugatti",
     "categoria": "Hipercarro",
-    "imagem_capa": "img/1.jpg",
+    "imagem_capa": "1.Png",
     "unidades_brasil": "1 unidade conhecida (SP)",
     "descricao": "O Bugatti Chiron é uma obra-prima da engenharia com motor W16 e 1.500 cavalos de potência."
   },
@@ -90,3 +90,4 @@
     "descricao": "O Zonda é um dos modelos mais exclusivos e desejados do mundo, com motor AMG V12."
   }
 ]
+
