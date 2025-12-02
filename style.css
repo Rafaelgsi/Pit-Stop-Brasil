@@ -109,7 +109,7 @@ nav a:hover, nav a.active {
     
     /* IMAGEM DE FUNDO */
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Pagani_Huayra_BC_at_GIMS_2018_II.jpg/1280px-Pagani_Huayra_BC_at_GIMS_2018_II.jpg');
+                url('caixa.png');
     
     background-size: cover;
     background-position: center;
@@ -173,5 +173,6 @@ nav a:hover, nav a.active {
 /* Rodapé */
 
 footer { text-align: center; padding: 3rem; background: #1a1a1a; margin-top: 4rem; color: #666; border-top: 1px solid #333; }
+
 
 
