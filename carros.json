@@ -13,7 +13,7 @@
     "modelo": "McLaren Senna",
     "marca": "McLaren",
     "categoria": "Hipercarro",
-    "imagem_capa": "img/2.jpg",
+    "imagem_capa": "2.png",
     "unidades_brasil": "Cerca de 6 unidades",
     "descricao": "Hipercarro focado em pista, criado em homenagem ao lendário piloto brasileiro Ayrton Senna."
   },
@@ -22,7 +22,7 @@
     "modelo": "Ferrari LaFerrari",
     "marca": "Ferrari",
     "categoria": "Hipercarro",
-    "imagem_capa": "img/3.jpg",
+    "imagem_capa": "3.png",
     "unidades_brasil": "1 unidade confirmada",
     "descricao": "O ápice da tecnologia da Ferrari, combinando um V12 aspirado com sistema híbrido."
   },
@@ -31,7 +31,7 @@
     "modelo": "Porsche 918 Spyder",
     "marca": "Porsche",
     "categoria": "Hipercarro",
-    "imagem_capa": "img/4.jpg",
+    "imagem_capa": "4.png",
     "unidades_brasil": "Cerca de 3 unidades",
     "descricao": "Hipercarro híbrido que marcou época pela tecnologia e aceleração brutal."
   },
@@ -40,7 +40,7 @@
     "modelo": "Lamborghini Aventador SVJ",
     "marca": "Lamborghini",
     "categoria": "Superesportivo",
-    "imagem_capa": "img/5.jpg",
+    "imagem_capa": "5.png",
     "unidades_brasil": "Algumas unidades",
     "descricao": "A versão mais extrema e focada em performance do Aventador V12."
   },
@@ -49,7 +49,7 @@
     "modelo": "Volkswagen SP2",
     "marca": "Volkswagen",
     "categoria": "Clássico Nacional",
-    "imagem_capa": "img/6.jpg",
+    "imagem_capa": "6.png",
     "unidades_brasil": "Cerca de 10.000 produzidas",
     "descricao": "O Volkswagen mais bonito do mundo, desenhado e produzido exclusivamente no Brasil nos anos 70."
   },
@@ -58,7 +58,7 @@
     "modelo": "Puma GTB S2",
     "marca": "Puma",
     "categoria": "Clássico Nacional",
-    "imagem_capa": "img/7.jpg",
+    "imagem_capa": "7.png",
     "unidades_brasil": "Raríssimo em bom estado",
     "descricao": "O 'Muscle Car' brasileiro. Usava motor 6 cilindros do Opala e era o carro mais caro do país."
   },
@@ -67,7 +67,7 @@
     "modelo": "Ferrari F40",
     "marca": "Ferrari",
     "categoria": "Lenda Importada",
-    "imagem_capa": "img/8.jpg",
+    "imagem_capa": "8.png",
     "unidades_brasil": "Pouquíssimas unidades",
     "descricao": "O último carro aprovado pessoalmente por Enzo Ferrari. Um ícone absoluto dos anos 80."
   },
@@ -76,7 +76,7 @@
     "modelo": "Porsche Carrera GT",
     "marca": "Porsche",
     "categoria": "Lenda Importada",
-    "imagem_capa": "img/9.jpg",
+    "imagem_capa": "9.png",
     "unidades_brasil": "Cerca de 2 unidades",
     "descricao": "Famoso pelo seu motor V10 aspirado com um dos roncos mais bonitos da história."
   },
@@ -85,10 +85,11 @@
     "modelo": "Pagani Zonda",
     "marca": "Pagani",
     "categoria": "Hipercarro",
-    "imagem_capa": "img/10.jpg",
+    "imagem_capa": "10.png",
     "unidades_brasil": "1 unidade confirmada",
     "descricao": "O Zonda é um dos modelos mais exclusivos e desejados do mundo, com motor AMG V12."
   }
 ]
+
 
 
