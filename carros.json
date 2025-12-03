@@ -6,7 +6,7 @@
     "categoria": "Hipercarro",
     "imagem_capa": "1.png",
     "unidades_brasil": "1 unidade conhecida (SP)",
-    "descricao": "O Bugatti Chiron é uma obra-prima da engenharia com motor W16 e 1.500 cavalos de potência."
+    "descricao": "O Bugatti Chiron é uma obra-prima da engenharia com motor W16 e 1.500 cv."
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "categoria": "Hipercarro",
     "imagem_capa": "2.png",
     "unidades_brasil": "Cerca de 6 unidades",
-    "descricao": "Hipercarro focado em pista, criado em homenagem ao lendário piloto brasileiro Ayrton Senna."
+    "descricao": "Hipercarro focado em pista, criado em homenagem a Ayrton Senna."
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "categoria": "Hipercarro",
     "imagem_capa": "3.png",
     "unidades_brasil": "1 unidade confirmada",
-    "descricao": "O ápice da tecnologia da Ferrari, combinando um V12 aspirado com sistema híbrido."
+    "descricao": "Combina um V12 aspirado com sistema híbrido; extremamente rara."
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "categoria": "Hipercarro",
     "imagem_capa": "4.png",
     "unidades_brasil": "Cerca de 3 unidades",
-    "descricao": "Hipercarro híbrido que marcou época pela tecnologia e aceleração brutal."
+    "descricao": "Hipercarro híbrido que marcou época por tecnologia e desempenho."
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "categoria": "Superesportivo",
     "imagem_capa": "5.png",
     "unidades_brasil": "Algumas unidades",
-    "descricao": "A versão mais extrema e focada em performance do Aventador V12."
+    "descricao": "Versão extrema do Aventador, com V12 e foco em pista."
   },
   {
     "id": 6,
@@ -50,8 +50,8 @@
     "marca": "Volkswagen",
     "categoria": "Clássico Nacional",
     "imagem_capa": "6.png",
-    "unidades_brasil": "Cerca de 10.000 produzidas",
-    "descricao": "O Volkswagen mais bonito do mundo, desenhado e produzido exclusivamente no Brasil nos anos 70."
+    "unidades_brasil": "Cerca de 10.000 produzidas (histórico)",
+    "descricao": "Desenvolvido e produzido no Brasil nos anos 70; ícone nacional."
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "categoria": "Clássico Nacional",
     "imagem_capa": "7.png",
     "unidades_brasil": "Raríssimo em bom estado",
-    "descricao": "O 'Muscle Car' brasileiro. Usava motor 6 cilindros do Opala e era o carro mais caro do país."
+    "descricao": "Muscle car brasileiro equipado originalmente com motor Chevrolet/Opala."
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "categoria": "Lenda Importada",
     "imagem_capa": "8.png",
     "unidades_brasil": "Pouquíssimas unidades",
-    "descricao": "O último carro aprovado pessoalmente por Enzo Ferrari. Um ícone absoluto dos anos 80."
+    "descricao": "Último carro aprovado por Enzo Ferrari; ícone absoluto dos anos 80."
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "categoria": "Lenda Importada",
     "imagem_capa": "9.png",
     "unidades_brasil": "Cerca de 2 unidades",
-    "descricao": "Famoso pelo seu motor V10 aspirado com um dos roncos mais bonitos da história."
+    "descricao": "Superesportivo com motor V10 aspirado; raro e valorizado."
   },
   {
     "id": 10,
@@ -87,6 +87,186 @@
     "categoria": "Hipercarro",
     "imagem_capa": "10.png",
     "unidades_brasil": "1 unidade confirmada",
-    "descricao": "O Zonda é um dos modelos mais exclusivos e desejados do mundo, com motor AMG V12."
+    "descricao": "Modelo exclusivo com motor AMG V12; extremamente raro."
+  },
+  {
+    "id": 11,
+    "modelo": "Ferrari F50",
+    "marca": "Ferrari",
+    "categoria": "Lenda Importada",
+    "imagem_capa": "11.png",
+    "unidades_brasil": "1 unidade conhecida",
+    "descricao": "V12 derivado da Fórmula 1; um dos Ferrari mais raros."
+  },
+  {
+    "id": 12,
+    "modelo": "Mercedes SLR McLaren",
+    "marca": "Mercedes-Benz",
+    "categoria": "Superesportivo",
+    "imagem_capa": "12.png",
+    "unidades_brasil": "Algumas unidades",
+    "descricao": "Colaboração Mercedes-McLaren com desempenho e história."
+  },
+  {
+    "id": 13,
+    "modelo": "Porsche 911 GT3 RS",
+    "marca": "Porsche",
+    "categoria": "Superesportivo",
+    "imagem_capa": "13.png",
+    "unidades_brasil": "Diversas unidades",
+    "descricao": "Versão pista do 911, com aerodinâmica e acerto focados em volta rápida."
+  },
+  {
+    "id": 14,
+    "modelo": "Rolls-Royce Cullinan",
+    "marca": "Rolls-Royce",
+    "categoria": "Ultra Luxo",
+    "imagem_capa": "14.png",
+    "unidades_brasil": "Algumas unidades",
+    "descricao": "SUV de altíssimo luxo com acabamento artesanal."
+  },
+  {
+    "id": 15,
+    "modelo": "Bentley Continental GT",
+    "marca": "Bentley",
+    "categoria": "Gran Turismo",
+    "imagem_capa": "15.png",
+    "unidades_brasil": "Algumas unidades",
+    "descricao": "GT de luxo com motor potente e interior sofisticado."
+  },
+  {
+    "id": 16,
+    "modelo": "Audi R8 V10 Manual",
+    "marca": "Audi",
+    "categoria": "Superesportivo",
+    "imagem_capa": "16.png",
+    "unidades_brasil": "15 unidades importadas",
+    "descricao": "Versão manual do R8, raríssima e desejada por entusiastas."
+  },
+  {
+    "id": 17,
+    "modelo": "Ford GT",
+    "marca": "Ford",
+    "categoria": "Hipercarro",
+    "imagem_capa": "17.png",
+    "unidades_brasil": "Poucas unidades",
+    "descricao": "Reencarnação moderna do GT40, com foco em desempenho de pista."
+  },
+  {
+    "id": 18,
+    "modelo": "Lamborghini Huracán",
+    "marca": "Lamborghini",
+    "categoria": "Superesportivo",
+    "imagem_capa": "18.png",
+    "unidades_brasil": "Várias unidades",
+    "descricao": "V10 ágil e popular entre colecionadores no Brasil."
+  },
+  {
+    "id": 19,
+    "modelo": "Jaguar F-Type SVR",
+    "marca": "Jaguar",
+    "categoria": "Superesportivo",
+    "imagem_capa": "19.png",
+    "unidades_brasil": "Algumas unidades",
+    "descricao": "Versão de alta performance do F-Type, com V8 supercharged."
+  },
+  {
+    "id": 20,
+    "modelo": "Pagani Utopia",
+    "marca": "Pagani",
+    "categoria": "Hipercarro",
+    "imagem_capa": "20.png",
+    "unidades_brasil": "1 unidade confirmada",
+    "descricao": "Novo Pagani com atenção artesanal aos detalhes e performance extrema."
+  },
+  {
+    "id": 21,
+    "modelo": "Porsche 935",
+    "marca": "Porsche",
+    "categoria": "Racing",
+    "imagem_capa": "21.png",
+    "unidades_brasil": "ÚNICA unidade no Brasil",
+    "descricao": "Exemplar único, inspirado no lendário 935 de corrida."
+  },
+  {
+    "id": 22,
+    "modelo": "Rolls-Royce Dawn",
+    "marca": "Rolls-Royce",
+    "categoria": "Ultra Luxo",
+    "imagem_capa": "22.png",
+    "unidades_brasil": "Algumas unidades",
+    "descricao": "Conversível de luxo com acabamento artesanal e motor V12."
+  },
+  {
+    "id": 23,
+    "modelo": "Gurgel BR-800",
+    "marca": "Gurgel",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "23.png",
+    "unidades_brasil": "Raro, porém existente",
+    "descricao": "Exemplo da indústria automotiva brasileira com produção própria."
+  },
+  {
+    "id": 24,
+    "modelo": "Chevrolet Caravan",
+    "marca": "Chevrolet",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "24.png",
+    "unidades_brasil": "Ainda encontrado em bom estado",
+    "descricao": "Perua clássica baseada no Opala, muito valorizada por colecionadores."
+  },
+  {
+    "id": 25,
+    "modelo": "Super Veloce (SV Único)",
+    "marca": "Super Veloce",
+    "categoria": "Hipercarro Exclusivo",
+    "imagem_capa": "25.png",
+    "unidades_brasil": "1 unidade (único no Brasil)",
+    "descricao": "Modelo único, customizado e extremamente raro."
+  },
+  {
+    "id": 26,
+    "modelo": "Nissan GT-R R34",
+    "marca": "Nissan",
+    "categoria": "Esportivo JDM",
+    "imagem_capa": "26.png",
+    "unidades_brasil": "1 unidade legalizada (Renato Garcia)",
+    "descricao": "Ícone JDM; única R34 legalizada conhecida no Brasil."
+  },
+  {
+    "id": 27,
+    "modelo": "McLaren P1",
+    "marca": "McLaren",
+    "categoria": "Hipercarro",
+    "imagem_capa": "27.png",
+    "unidades_brasil": "Poucas unidades",
+    "descricao": "Hipercarro híbrido da McLaren, muito raro e desejado."
+  },
+  {
+    "id": 28,
+    "modelo": "Ferrari Enzo",
+    "marca": "Ferrari",
+    "categoria": "Hipercarro",
+    "imagem_capa": "28.png",
+    "unidades_brasil": "1 unidade conhecida",
+    "descricao": "Supercarro V12 legado de Enzo Ferrari; extremamente raro."
+  },
+  {
+    "id": 29,
+    "modelo": "Mercedes-Benz SLS AMG",
+    "marca": "Mercedes-Benz",
+    "categoria": "Superesportivo",
+    "imagem_capa": "29.png",
+    "unidades_brasil": "Poucas unidades",
+    "descricao": "GT com portas asa-de-gaivota e motor V8 potente; raro no país."
+  },
+  {
+    "id": 30,
+    "modelo": "Ford Mustang Shelby GT500 (clássico)",
+    "marca": "Ford",
+    "categoria": "Muscle Car Clássico",
+    "imagem_capa": "30.png",
+    "unidades_brasil": "Poucas unidades",
+    "descricao": "Shelby clássico importado, peça de coleção entre entusiastas."
   }
 ]
