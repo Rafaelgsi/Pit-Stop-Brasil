@@ -1,71 +1,80 @@
+let todosOsCarros = [];
+
+// Função principal que carrega tudo
 async function loadData() {
   try {
-    // 1. Busca os dados do arquivo JSON
+    // Busca o arquivo JSON
     const res = await fetch('carros.json');
-    const carros = await res.json();
-    
-    // Salva globalmente para usar no modal
-    window.carrosData = carros;
+    todosOsCarros = await res.json();
+    window.carrosData = todosOsCarros;
 
-    // Inicializa as funções
-    montarFiltros(carros);
-    renderizarGaleria(carros);
+    montarOpcoesMarca(); // Cria o menu de marcas
+    configurarBusca();   // Ativa a pesquisa
+    renderizarGaleria(todosOsCarros); // Mostra os carros
     
   } catch (erro) {
-    console.error("Erro ao carregar dados:", erro);
-    document.getElementById('galeria-carros').innerHTML = "<p>Erro ao carregar o catálogo. Verifique se está usando o Live Server.</p>";
+    console.error("Erro:", erro);
+    document.getElementById('galeria-carros').innerHTML = "<p style='color:white; text-align:center;'>Erro ao carregar catálogo. Verifique o JSON.</p>";
   }
 }
 
-// === MUDANÇA AQUI: Filtra por CATEGORIA em vez de MARCA ===
-function montarFiltros(carros) {
-  // Pega todas as categorias únicas do JSON
-  const categorias = ['todos', ...new Set(carros.map(c => c.categoria))];
-  const container = document.getElementById('filtros');
-  container.innerHTML = ''; // Limpa filtros antigos
+// Preenche o menu <select> com as Marcas (A-Z)
+function montarOpcoesMarca() {
+  const marcas = [...new Set(todosOsCarros.map(c => c.marca))].sort();
+  const select = document.getElementById('filtro-marca');
 
-  categorias.forEach(categoria => {
-    const btn = document.createElement('button');
-    btn.className = 'btn-filtro';
-    
-    // Deixa o texto bonitinho (Maiúsculo)
-    btn.textContent = categoria.toUpperCase();
-    
-    btn.onclick = (e) => {
-      // Remove classe 'ativo' de todos e adiciona no clicado
-      document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('ativo'));
-      e.target.classList.add('ativo');
-      
-      // Filtra pela Categoria
-      if(categoria === 'todos') {
-        renderizarGaleria(carros);
-      } else {
-        const filtrados = carros.filter(c => c.categoria === categoria);
-        renderizarGaleria(filtrados);
-      }
-    };
-    container.appendChild(btn);
+  marcas.forEach(marca => {
+    const option = document.createElement('option');
+    option.value = marca;
+    option.textContent = marca;
+    select.appendChild(option);
   });
-  
-  // Deixa o botão "TODOS" ativo inicialmente
-  container.firstChild.classList.add('ativo');
 }
 
-// Desenha os cards na tela
+// Lógica de Filtro (Texto + Marca)
+function configurarBusca() {
+  const inputBusca = document.getElementById('campo-busca');
+  const selectFiltro = document.getElementById('filtro-marca');
+
+  function filtrar() {
+    const termo = inputBusca.value.toLowerCase();
+    const marcaSelecionada = selectFiltro.value;
+
+    const filtrados = todosOsCarros.filter(carro => {
+      // Filtra pelo que foi digitado (Modelo)
+      const matchTexto = carro.modelo.toLowerCase().includes(termo);
+      // Filtra pela Marca selecionada
+      const matchMarca = marcaSelecionada === 'todos' || carro.marca === marcaSelecionada;
+
+      return matchTexto && matchMarca;
+    });
+
+    renderizarGaleria(filtrados);
+  }
+
+  inputBusca.addEventListener('input', filtrar);
+  selectFiltro.addEventListener('change', filtrar);
+}
+
+// Cria os Cards na tela
 function renderizarGaleria(lista) {
   const container = document.getElementById('galeria-carros');
   container.innerHTML = '';
   
   if(lista.length === 0) {
-    container.innerHTML = '<p style="color:white; text-align:center; width:100%;">Nenhum carro encontrado nesta categoria.</p>';
+    container.innerHTML = '<p style="color:white; text-align:center; width:100%;">Nenhum carro encontrado.</p>';
     return;
   }
 
   lista.forEach(carro => {
     const card = document.createElement('div');
     card.className = 'card';
+    
+    // Procura imagem PNG (1.png, 2.png...)
+    const imagemArquivo = `${carro.id}.png`;
+
     card.innerHTML = `
-        <img src="${carro.imagem_capa}" alt="${carro.modelo}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
+        <img src="${imagemArquivo}" alt="${carro.modelo}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
         <div class="card-info">
             <h3>${carro.modelo}</h3>
             <p style="color: #aaa; font-size: 0.9rem;">${carro.marca} | ${carro.categoria}</p>
@@ -76,16 +85,18 @@ function renderizarGaleria(lista) {
   });
 }
 
-// Abre a janela de detalhes
+// Janela de Detalhes
 function abrirModal(id) {
   const carro = window.carrosData.find(c => c.id === id);
   if(!carro) return;
 
   const modalBody = document.getElementById('modal-body');
+  const imagemArquivo = `${carro.id}.png`;
+
   modalBody.innerHTML = `
     <h2 style="color: #d32f2f; margin-bottom: 10px;">${carro.modelo}</h2>
-    <span class="badge-raridade" style="font-size: 0.8rem; margin-bottom:10px; display:inline-block;">${carro.unidades_brasil}</span>
-    <img src="${carro.imagem_capa}" class="img-principal">
+    <span class="badge-raridade">${carro.unidades_brasil}</span>
+    <img src="${imagemArquivo}" class="img-principal">
     <p><strong>Marca:</strong> ${carro.marca}</p>
     <p><strong>Categoria:</strong> ${carro.categoria}</p>
     <br>
@@ -100,13 +111,9 @@ function fecharModal() {
   document.getElementById('modal-detalhes').style.display = 'none';
 }
 
-// Fecha modal se clicar fora dele
 window.onclick = function(event) {
   const modal = document.getElementById('modal-detalhes');
-  if (event.target == modal) {
-    fecharModal();
-  }
+  if (event.target == modal) fecharModal();
 }
 
-// Inicia tudo quando carrega a página
 window.addEventListener('DOMContentLoaded', loadData);
