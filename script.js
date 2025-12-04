@@ -1,39 +1,75 @@
+let todosOsCarros = [];
+
 async function loadData() {
   try {
     const res = await fetch('carros.json');
-    const carros = await res.json();
-    window.carrosData = carros;
+    todosOsCarros = await res.json();
+    window.carrosData = todosOsCarros;
 
-    // Ordena os carros por MARCA (A-Z) para ficar organizado visualmente
-    carros.sort((a, b) => a.marca.localeCompare(b.marca));
-
-    renderizarGaleria(carros);
+    // 1. Cria o menu de marcas
+    criarBotoesMarca();
+    
+    // 2. Mostra todos os carros no começo
+    renderizarGaleria(todosOsCarros);
     
   } catch (erro) {
     console.error("Erro:", erro);
-    document.getElementById('galeria-carros').innerHTML = "<p style='color:white; text-align:center;'>Erro ao carregar. Verifique o JSON.</p>";
   }
 }
 
-// MOSTRA OS CARROS (Agora mostra a Marca e Categoria bem visíveis)
+function criarBotoesMarca() {
+  const container = document.getElementById('menu-marcas');
+  
+  // Pega todas as marcas únicas do JSON e ordena alfabeticamente
+  // Adiciona "TODAS" no começo da lista
+  const marcas = ['Todas', ...new Set(todosOsCarros.map(c => c.marca))].sort();
+
+  marcas.forEach(marca => {
+    const btn = document.createElement('button');
+    btn.className = 'btn-filtro';
+    btn.textContent = marca.toUpperCase(); // Deixa o texto em maiúsculo (FERRARI, PORSCHE...)
+    
+    btn.onclick = (e) => {
+      // Tira a cor vermelha dos outros botões
+      document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('ativo'));
+      // Coloca a cor vermelha no botão clicado
+      e.target.classList.add('ativo');
+      
+      // FILTRA OS CARROS
+      if(marca === 'Todas') {
+        renderizarGaleria(todosOsCarros);
+      } else {
+        const filtrados = todosOsCarros.filter(carro => carro.marca === marca);
+        renderizarGaleria(filtrados);
+      }
+    };
+    container.appendChild(btn);
+  });
+  
+  // Deixa o botão "TODAS" marcado no início
+  if(container.firstChild) container.firstChild.classList.add('ativo');
+}
+
 function renderizarGaleria(lista) {
   const container = document.getElementById('galeria-carros');
   container.innerHTML = '';
   
+  if(lista.length === 0) {
+    container.innerHTML = '<p style="color:white; text-align:center; width:100%;">Nenhum carro dessa marca encontrado.</p>';
+    return;
+  }
+
   lista.forEach(carro => {
     const card = document.createElement('div');
     card.className = 'card';
-    
-    // Pega a imagem direto do JSON (ex: "1.png")
     const imagemArquivo = carro.imagem_capa;
 
     card.innerHTML = `
         <img src="${imagemArquivo}" alt="${carro.modelo}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
         <div class="card-info">
             <h3>${carro.modelo}</h3>
-            <p style="color: #d32f2f; font-weight: bold; font-size: 0.9rem;">${carro.marca}</p>
-            <p style="color: #aaa; font-size: 0.85rem;">${carro.categoria}</p>
-            
+            <p style="color: #d32f2f; font-weight: bold;">${carro.marca}</p>
+            <p style="color: #aaa; font-size: 0.8rem;">${carro.categoria}</p>
             <p class="ver-mais">Ver detalhes +</p>
         </div>`;
     card.onclick = () => abrirModal(carro.id);
@@ -52,19 +88,8 @@ function abrirModal(id) {
     <h2 style="color: #d32f2f; margin-bottom: 10px;">${carro.modelo}</h2>
     <span class="badge-raridade">${carro.unidades_brasil}</span>
     <img src="${imagemArquivo}" class="img-principal">
-    
-    <div style="display: flex; gap: 20px; margin-bottom: 15px;">
-        <div>
-            <p style="color:#888; font-size: 0.9rem;">MARCA</p>
-            <p style="color:white; font-weight:bold;">${carro.marca}</p>
-        </div>
-        <div>
-            <p style="color:#888; font-size: 0.9rem;">CATEGORIA</p>
-            <p style="color:white; font-weight:bold;">${carro.categoria}</p>
-        </div>
-    </div>
-
-    <p><strong>Sobre a máquina:</strong></p>
+    <p><strong>Marca:</strong> ${carro.marca}</p>
+    <br>
     <p>${carro.descricao}</p>
   `;
   
