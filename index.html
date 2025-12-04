@@ -1,28 +1,53 @@
-<div class="container-loja">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Pit Stop FC - Garagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
   
-  <aside class="barra-lateral">
-    <h3>Filtrar por Marca</h3>
-    <form>
-      <label><input type="checkbox" name="marca" value="fiat"> Fiat</label><br>
-      <label><input type="checkbox" name="marca" value="chevrolet"> Chevrolet</label><br>
-      <label><input type="checkbox" name="marca" value="vw"> Volkswagen</label><br>
-      <label><input type="checkbox" name="marca" value="honda"> Honda</label>
-    </form>
-  </aside>
+  <header>
+    <div class="logo">Pit Stop FC 🏁</div>
+    <nav>
+      <a href="index.html" class="active">Garagem</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-  <main class="grade-carros">
-    
-    <div class="card-carro">
-      <img src="foto-carro1.jpg" alt="Carro 1">
-      <h4>Fiat Uno 2010</h4>
-      <p>R$ 20.000,00</p>
-    </div>
+  <section class="hero">
+    <h1>Máquinas Exclusivas</h1>
+    <p>Selecione uma marca no menu lateral.</p>
+  </section>
 
-    <div class="card-carro">
-      <img src="foto-carro2.jpg" alt="Carro 2">
-      <h4>Honda Civic 2018</h4>
-      <p>R$ 90.000,00</p>
-    </div>
+  <main class="container-principal">
     
-    </main>
-</div>
+    <aside class="sidebar">
+        <h3>Filtrar por Marca</h3>
+        <div id="menu-lateral">
+            </div>
+    </aside>
+
+    <section class="conteudo-carros">
+        <div class="grid-carros" id="galeria-carros"></div>
+    </section>
+
+  </main>
+
+  <div id="modal-detalhes" class="modal-overlay" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="fechar-modal" onclick="fecharModal()">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pit Stop FC - Projeto Acadêmico LSW</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
