@@ -268,7 +268,7 @@
     "imagem_capa": "30.png",
     "unidades_brasil": "Poucas unidades",
     "descricao": "Shelby clássico importado, peça de coleção entre entusiastas."
-  };
+  },
   {
     "id": 31,
     "modelo": "Chevrolet Opala",
@@ -333,6 +333,3 @@
     "descricao": "Família de veículos clássicos da Ford, muito populares nos anos 80 e 90."
   }
 ]
-
-
-
