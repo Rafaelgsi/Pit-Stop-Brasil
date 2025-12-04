@@ -11,7 +11,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
                 url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2000');
     background-size: cover;
     padding: 1rem 3rem;
@@ -27,67 +27,66 @@ nav { display: flex; gap: 20px; }
 nav a { color: #ccc; text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
 nav a:hover, nav a.active { color: #fff; text-decoration: underline; text-decoration-color: #d32f2f; }
 
-/* Hero Section (Menor agora, pois o foco é o conteúdo) */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 2rem;
-    margin-bottom: 2rem;
     background: linear-gradient(to right, #1a1a1a, #2a2a2a);
     border-bottom: 1px solid #333;
 }
 .hero h1 { font-size: 2rem; color: #fff; text-transform: uppercase; }
 
-/* === LAYOUT DE DUAS COLUNAS === */
+/* === LAYOUT SIDEBAR (O SEGREDO) === */
 .container-principal {
-    display: flex; /* Coloca lado a lado */
+    display: flex; /* Coloca Menu e Carros lado a lado */
     max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
     gap: 30px;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
-/* ESTILO DO MENU LATERAL (SIDEBAR) */
+/* Estilo da Barra Lateral */
 .sidebar {
-    width: 250px; /* Largura fixa */
+    width: 260px; /* Largura fixa do menu */
     background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #333;
+    border-right: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px 0;
     height: fit-content;
-    position: sticky; /* Faz o menu acompanhar a rolagem */
-    top: 20px; 
+    /* Faz o menu ficar parado ao rolar */
+    position: sticky;
+    top: 20px;
 }
 
 .sidebar h3 {
     color: #d32f2f;
+    padding-left: 20px;
     margin-bottom: 15px;
-    font-size: 1.2rem;
     text-transform: uppercase;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 /* Botões do Menu Lateral */
 .btn-filtro {
-    display: block; /* Um embaixo do outro */
+    display: block;
     width: 100%;
     text-align: left;
+    padding: 12px 20px;
     background: transparent;
     border: none;
-    border-left: 3px solid transparent; /* Linha lateral invisível */
     color: #bbb;
-    padding: 12px 15px;
-    cursor: pointer;
     font-size: 0.95rem;
-    transition: all 0.3s;
-    border-bottom: 1px solid #2a2a2a;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 3px solid transparent; /* Linha de destaque invisível */
 }
 
 .btn-filtro:hover {
     background-color: #2a2a2a;
     color: #fff;
-    padding-left: 20px; /* Efeito de movimento */
+    padding-left: 25px; /* Move um pouco para a direita */
 }
 
 .btn-filtro.ativo {
@@ -99,7 +98,7 @@ nav a:hover, nav a.active { color: #fff; text-decoration: underline; text-decora
 
 /* Área dos Carros */
 .conteudo-carros {
-    flex: 1; /* Ocupa o resto do espaço */
+    flex: 1; /* Ocupa todo o resto do espaço */
 }
 
 .grid-carros {
@@ -108,12 +107,12 @@ nav a:hover, nav a.active { color: #fff; text-decoration: underline; text-decora
     gap: 20px;
 }
 
-/* Card Style */
+/* Card */
 .card {
     background: #1e1e1e; border-radius: 8px; overflow: hidden; cursor: pointer; transition: 0.3s;
     border: 1px solid #333;
 }
-.card:hover { transform: translateY(-5px); border-color: #d32f2f; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+.card:hover { transform: translateY(-5px); border-color: #d32f2f; }
 .card img { width: 100%; height: 180px; object-fit: cover; }
 .card-info { padding: 15px; }
 .card-info h3 { font-size: 1.1rem; color: #fff; margin-bottom: 5px; }
@@ -130,6 +129,6 @@ footer { text-align: center; padding: 2rem; background: #111; margin-top: 2rem; 
 
 /* Responsivo para Celular */
 @media (max-width: 768px) {
-    .container-principal { flex-direction: column; } /* Menu vai para cima */
-    .sidebar { width: 100%; position: static; }
+    .container-principal { flex-direction: column; }
+    .sidebar { width: 100%; position: static; margin-bottom: 20px; }
 }
