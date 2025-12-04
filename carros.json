@@ -268,5 +268,71 @@
     "imagem_capa": "30.png",
     "unidades_brasil": "Poucas unidades",
     "descricao": "Shelby clássico importado, peça de coleção entre entusiastas."
+  };
+  {
+    "id": 31,
+    "modelo": "Chevrolet Opala",
+    "marca": "Chevrolet",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "31.png",
+    "unidades_brasil": "Muitas unidades preservadas",
+    "descricao": "Um dos maiores ícones da indústria nacional, famoso por suas versões esportivas e de luxo."
+  },
+  {
+    "id": 32,
+    "modelo": "Volkswagen Brasília",
+    "marca": "Volkswagen",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "32.png",
+    "unidades_brasil": "Muito comum nos anos 70 e 80, hoje valorizada",
+    "descricao": "Modelo compacto brasileiro, muito popular e hoje querido entre colecionadores."
+  },
+  {
+    "id": 33,
+    "modelo": "Fiat 147",
+    "marca": "Fiat",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "33.png",
+    "unidades_brasil": "Diversas preservadas",
+    "descricao": "Primeiro carro da Fiat produzido no Brasil; símbolo dos anos 70 e 80."
+  },
+  {
+    "id": 34,
+    "modelo": "Dodge Charger R/T",
+    "marca": "Dodge",
+    "categoria": "Muscle Car Nacional",
+    "imagem_capa": "34.png",
+    "unidades_brasil": "Raro e muito valorizado",
+    "descricao": "Muscle car nacional dos anos 70, conhecido pelo desempenho e estilo agressivo."
+  },
+  {
+    "id": 35,
+    "modelo": "Ford Maverick GT V8",
+    "marca": "Ford",
+    "categoria": "Muscle Car Nacional",
+    "imagem_capa": "35.png",
+    "unidades_brasil": "Raro em ótimo estado",
+    "descricao": "Versão esportiva com motor V8, um ícone brasileiro dos anos 70."
+  },
+  {
+    "id": 36,
+    "modelo": "Miura Targa",
+    "marca": "Miura",
+    "categoria": "Esportivo Nacional",
+    "imagem_capa": "36.png",
+    "unidades_brasil": "Raríssimo em bom estado",
+    "descricao": "Esportivo brasileiro com estilo único e muito raro nos dias de hoje."
+  },
+  {
+    "id": 37,
+    "modelo": "Ford Corcel II / Del Rey / Belina",
+    "marca": "Ford",
+    "categoria": "Clássico Nacional",
+    "imagem_capa": "37.png",
+    "unidades_brasil": "Diversas unidades preservadas",
+    "descricao": "Família de veículos clássicos da Ford, muito populares nos anos 80 e 90."
   }
 ]
+
+]
+
