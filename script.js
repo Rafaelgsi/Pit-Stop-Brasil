@@ -6,10 +6,13 @@ async function loadData() {
     todosOsCarros = await res.json();
     window.carrosData = todosOsCarros;
 
-    // 1. Cria o menu de marcas
-    criarBotoesMarca();
+    // Ordena de A-Z
+    todosOsCarros.sort((a, b) => a.marca.localeCompare(b.marca));
+
+    // Cria o menu lateral
+    criarMenuLateral();
     
-    // 2. Mostra todos os carros no começo
+    // Mostra tudo
     renderizarGaleria(todosOsCarros);
     
   } catch (erro) {
@@ -17,26 +20,27 @@ async function loadData() {
   }
 }
 
-function criarBotoesMarca() {
-  const container = document.getElementById('menu-marcas');
+function criarMenuLateral() {
+  // Pega as marcas únicas
+  const marcas = ['Todas as Marcas', ...new Set(todosOsCarros.map(c => c.marca))].sort();
+  const container = document.getElementById('menu-lateral');
   
-  // Pega todas as marcas únicas do JSON e ordena alfabeticamente
-  // Adiciona "TODAS" no começo da lista
-  const marcas = ['Todas', ...new Set(todosOsCarros.map(c => c.marca))].sort();
+  if (!container) return;
+  container.innerHTML = '';
 
   marcas.forEach(marca => {
     const btn = document.createElement('button');
     btn.className = 'btn-filtro';
-    btn.textContent = marca.toUpperCase(); // Deixa o texto em maiúsculo (FERRARI, PORSCHE...)
+    btn.textContent = marca; // Texto normal
     
     btn.onclick = (e) => {
-      // Tira a cor vermelha dos outros botões
+      // Remove classe 'ativo' dos outros
       document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('ativo'));
-      // Coloca a cor vermelha no botão clicado
+      // Adiciona no clicado
       e.target.classList.add('ativo');
       
-      // FILTRA OS CARROS
-      if(marca === 'Todas') {
+      // Filtra
+      if(marca === 'Todas as Marcas') {
         renderizarGaleria(todosOsCarros);
       } else {
         const filtrados = todosOsCarros.filter(carro => carro.marca === marca);
@@ -46,7 +50,7 @@ function criarBotoesMarca() {
     container.appendChild(btn);
   });
   
-  // Deixa o botão "TODAS" marcado no início
+  // Marca o primeiro como ativo
   if(container.firstChild) container.firstChild.classList.add('ativo');
 }
 
@@ -55,7 +59,7 @@ function renderizarGaleria(lista) {
   container.innerHTML = '';
   
   if(lista.length === 0) {
-    container.innerHTML = '<p style="color:white; text-align:center; width:100%;">Nenhum carro dessa marca encontrado.</p>';
+    container.innerHTML = '<p style="color:#aaa;">Nenhum carro encontrado.</p>';
     return;
   }
 
@@ -68,9 +72,8 @@ function renderizarGaleria(lista) {
         <img src="${imagemArquivo}" alt="${carro.modelo}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
         <div class="card-info">
             <h3>${carro.modelo}</h3>
-            <p style="color: #d32f2f; font-weight: bold;">${carro.marca}</p>
-            <p style="color: #aaa; font-size: 0.8rem;">${carro.categoria}</p>
-            <p class="ver-mais">Ver detalhes +</p>
+            <p style="color: #d32f2f; font-weight: bold; font-size: 0.85rem;">${carro.marca}</p>
+            <p class="ver-mais">DETALHES</p>
         </div>`;
     card.onclick = () => abrirModal(carro.id);
     container.appendChild(card);
@@ -88,8 +91,12 @@ function abrirModal(id) {
     <h2 style="color: #d32f2f; margin-bottom: 10px;">${carro.modelo}</h2>
     <span class="badge-raridade">${carro.unidades_brasil}</span>
     <img src="${imagemArquivo}" class="img-principal">
-    <p><strong>Marca:</strong> ${carro.marca}</p>
-    <br>
+    
+    <div style="display:flex; justify-content:space-between; margin: 15px 0; border-bottom:1px solid #333; padding-bottom:10px;">
+        <div><small style="color:#888;">MARCA</small><br><strong>${carro.marca}</strong></div>
+        <div><small style="color:#888;">CATEGORIA</small><br><strong>${carro.categoria}</strong></div>
+    </div>
+
     <p>${carro.descricao}</p>
   `;
   
