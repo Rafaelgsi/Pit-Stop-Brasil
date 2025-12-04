@@ -18,24 +18,30 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Máquinas Exclusivas no Brasil</h1>
-      <p>Escolha uma marca abaixo para filtrar.</p>
+  <section class="hero">
+    <h1>Máquinas Exclusivas</h1>
+    <p>Escolha uma categoria no menu ao lado.</p>
+  </section>
+
+  <main class="container-principal">
+    
+    <aside class="sidebar">
+        <h3>Categorias</h3>
+        <div id="menu-lateral"></div>
+    </aside>
+
+    <section class="conteudo-carros">
+        <div class="grid-carros" id="galeria-carros"></div>
     </section>
 
-    <div class="filtros" id="menu-marcas"></div>
-
-    <div class="grid-carros" id="galeria-carros"></div>
-
-    <div id="modal-detalhes" class="modal-overlay" aria-hidden="true">
-      <div class="modal-content" role="dialog" aria-modal="true">
-        <button class="fechar-modal" onclick="fecharModal()">×</button>
-        <div id="modal-body"></div>
-      </div>
-    </div>
-
   </main>
+
+  <div id="modal-detalhes" class="modal-overlay" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="fechar-modal" onclick="fecharModal()">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Pit Stop FC - Projeto Acadêmico LSW</p>
