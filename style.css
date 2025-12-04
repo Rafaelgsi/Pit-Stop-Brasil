@@ -132,3 +132,37 @@ footer { text-align: center; padding: 2rem; background: #111; margin-top: 2rem; 
     .container-principal { flex-direction: column; }
     .sidebar { width: 100%; position: static; margin-bottom: 20px; }
 }
+
+/* O Container que segura tudo */
+.container-loja {
+  display: grid;
+  /* Aqui definimos: 250px para a lateral, e o resto (1fr) para os carros */
+  grid-template-columns: 250px 1fr; 
+  gap: 20px; /* Espaço entre o menu e os carros */
+  padding: 20px;
+}
+
+/* Estilo básico da barra lateral */
+.barra-lateral {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  height: 100vh; /* Ocupa a altura toda da tela se quiser */
+}
+
+/* A Grade onde ficam os carros */
+.grade-carros {
+  display: grid;
+  /* Isso cria colunas automáticas que se ajustam (responsivo) */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo do Card do Carro (para parecer com o da foto) */
+.card-carro {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
