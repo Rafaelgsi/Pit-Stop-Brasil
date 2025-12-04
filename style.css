@@ -14,7 +14,9 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
                 url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2000');
     background-size: cover;
-    padding: 1rem 3rem;
+    
+    padding: 3rem 3rem; 
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,3 +139,4 @@ footer { text-align: center; padding: 2rem; background: #111; margin-top: 2rem; 
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
