@@ -73,6 +73,40 @@ nav a:hover, nav a.active { color: #ffffff; text-decoration: underline; text-dec
 .hero h1 { font-size: 3rem; color: #fff; text-transform: uppercase; font-weight: 800; margin-bottom: 10px; text-shadow: 2px 2px 10px black; }
 .hero p { color: #fff; font-size: 1.2rem; text-shadow: 1px 1px 5px black; }
 
+
+/* MENU DE MARCAS */
+.filtros { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 3rem; 
+    flex-wrap: wrap; /* Isso faz os botões irem para a linha de baixo se não couberem */
+    padding: 0 20px; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-filtro {
+    background: #2a2a2a; 
+    border: 2px solid #444; 
+    color: #ccc; 
+    padding: 8px 20px;
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.btn-filtro:hover, .btn-filtro.ativo { 
+    background: #d32f2f; 
+    border-color: #d32f2f; 
+    color: white; 
+    transform: scale(1.05);
+}
+
 /* === BARRA DE PESQUISA E FILTROS === */
 .barra-busca-container {
     display: flex;
@@ -151,3 +185,4 @@ footer { text-align: center; padding: 3rem; background: #1a1a1a; margin-top: 4re
     .barra-busca-container { flex-direction: column; }
     header { flex-direction: column; gap: 15px; text-align: center; }
 }
+
