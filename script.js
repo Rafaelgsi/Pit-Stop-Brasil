@@ -6,7 +6,7 @@ async function loadData() {
     todosOsCarros = await res.json();
     window.carrosData = todosOsCarros;
 
-    // Ordena de A-Z
+    // Ordena de A a Z
     todosOsCarros.sort((a, b) => a.marca.localeCompare(b.marca));
 
     // Cria o menu lateral
@@ -21,7 +21,6 @@ async function loadData() {
 }
 
 function criarMenuLateral() {
-  // Pega as marcas únicas
   const marcas = ['Todas as Marcas', ...new Set(todosOsCarros.map(c => c.marca))].sort();
   const container = document.getElementById('menu-lateral');
   
@@ -31,7 +30,7 @@ function criarMenuLateral() {
   marcas.forEach(marca => {
     const btn = document.createElement('button');
     btn.className = 'btn-filtro';
-    btn.textContent = marca; // Texto normal
+    btn.textContent = marca; // Nome da marca simples e limpo
     
     btn.onclick = (e) => {
       // Remove classe 'ativo' dos outros
@@ -39,7 +38,7 @@ function criarMenuLateral() {
       // Adiciona no clicado
       e.target.classList.add('ativo');
       
-      // Filtra
+      // Lógica de Filtro
       if(marca === 'Todas as Marcas') {
         renderizarGaleria(todosOsCarros);
       } else {
@@ -50,7 +49,7 @@ function criarMenuLateral() {
     container.appendChild(btn);
   });
   
-  // Marca o primeiro como ativo
+  // Ativa o primeiro botão
   if(container.firstChild) container.firstChild.classList.add('ativo');
 }
 
@@ -73,6 +72,7 @@ function renderizarGaleria(lista) {
         <div class="card-info">
             <h3>${carro.modelo}</h3>
             <p style="color: #d32f2f; font-weight: bold; font-size: 0.85rem;">${carro.marca}</p>
+            <p style="color: #aaa; font-size: 0.8rem;">${carro.categoria}</p>
             <p class="ver-mais">DETALHES</p>
         </div>`;
     card.onclick = () => abrirModal(carro.id);
