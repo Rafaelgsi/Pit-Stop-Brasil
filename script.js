@@ -6,13 +6,10 @@ async function loadData() {
     todosOsCarros = await res.json();
     window.carrosData = todosOsCarros;
 
-    // Ordena de A a Z
     todosOsCarros.sort((a, b) => a.marca.localeCompare(b.marca));
 
-    // Cria o menu lateral
     criarMenuLateral();
     
-    // Mostra tudo
     renderizarGaleria(todosOsCarros);
     
   } catch (erro) {
@@ -113,3 +110,4 @@ window.onclick = function(event) {
 }
 
 window.addEventListener('DOMContentLoaded', loadData);
+
